@@ -1,1 +1,56 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ec4ba4), color-stop(50%, white));
+  background: linear-gradient(#ec4ba4 50%, white 50%);
+  height: 100vh;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1024px;
+}
+
+.search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px auto 20px auto;
+  width: 30%;
+  background-color: #f3f3f3;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+#search-bar {
+  border-style: none;
+  border-radius: 10px;
+  width: 70%;
+  padding: 10px;
+}
+
+.stats-container {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.459);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.459);
+  padding: 30px 20px;
+}
+/*# sourceMappingURL=style.css.map */
