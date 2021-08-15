@@ -1,8 +1,13 @@
 @import "variables";
+@import "mixins";
 
 *{
     padding: 0;
     margin: 0;
+}
+
+body{
+    font-family: tahoma;
 }
 
 #main { 
@@ -20,13 +25,32 @@
     max-width: 1024px;
 }
 
+.container-title{
+    text-align: center;
+    color: $lightBlack;
+    font: {
+        size: 1.3rem;
+        weight: 600;
+    }
+    margin-bottom: 24px;
+}
+
+.stats-container{
+    background-color: $milkyBg;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.459);
+    padding: 30px 20px;
+}
+
 .search-container{
     display: flex;
     justify-content: space-between;
     margin: 0px auto 20px auto;
-    width: 30%;
+    width: 35%;
     background-color: $milkyBg;
-    padding: 20px 40px;
+    padding: 15px 40px;
     border-radius: $itemRadius;
 }
 
@@ -35,13 +59,68 @@
         style: none;
         radius: $itemRadius;
     }
-    width: 70%;
+    width: 75%;
     padding: 10px;
+    font-size: 1.3rem;
+    transition: background 0.2s;
+}
+#search-bar:hover{
+    background-color: $baseHover;
 }
 
-.stats-container{
-    background-color: $milkyBg;
-    border-radius: 20px;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.459);
-    padding: 30px 20px;
+#search-btn{
+    border-style: none;
+    padding: 12px;
+    border-radius: 50%;
+    color: $lightBlack;
+    font-size: 2rem;
+    transition: background 0.2s;
+}
+#search-btn:hover{
+    background-color: $baseHover;
+}
+
+
+.stats-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 12px;
+}
+
+.stats-item{
+    @include stats-item-container;
+    color: $milkyBg;
+}
+
+.stats-title{
+    font-size: 0.95rem;
+}
+
+.stats-item-icon{
+    font-size: 2rem;
+}
+
+.stats-number{
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+.active-cases{
+    background-color: $blueBg;
+}
+.critical-cases{
+    background-color: $redBg;
+}
+.recovered-cases{
+    background-color: $greenBg;
+}
+
+.total-cases{
+    background-color: $brownBg;
+}
+.total-deaths{
+    background-color: $pinkBg;
+}
+.total-tests{
+    background-color: $orangeBg;
 }

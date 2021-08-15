@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Sass/style.css">
     <title>Document</title>
 </head>
@@ -11,35 +12,65 @@
     <main id="main">
         <div id="container">
             <div class="search-container">
-                <input type="text" id="search-bar" placeholder="search for country">
-                <button id="search-btn">Search</button>
+                <input type="text" id="search-bar" placeholder="search the country">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
 
             <div class="stats-container">
-                <h2 id="container-title">COVID - 19 Cases In Iran</h2>
-
-                <div class="active-cases">
-                    <h3 class="stats-title">Active Cases</h3>
-                </div>
-
-                <div class="critical-cases">
-                    <h3 class="stats-title">Critical Cases</h3>
-                </div>
-
-                <div class="recovered-cases">
-                    <h3 class="stats-title">Recovered Cases</h3>
-                </div>
-
-                <div class="total-cases">
-                    <h3 class="stats-title">Total Cases</h3>
-                </div>
-
-                <div class="total-deaths">
-                    <h3 class="stats-title">Total Deaths</h3>             
-                </div>
-
-                <div class="total-tests">
-                    <h3 class="stats-title">Total Tests Done</h3>
+                <h2 class="container-title">
+                    COVID - 19 Cases In 
+                    <span class="chosen-country">Iran</span>
+                </h2>
+                <div class="stats-list">
+                    <div class="stats-item active-cases">
+                        <div class="stats-item-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4 class="stats-title">Active Cases</h4>
+                        <h3 class="stats-number"></h3>
+                    </div>
+    
+                    <div class="stats-item critical-cases">
+                        <div class="stats-item-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4 class="stats-title">Critical Cases</h4>
+                        <h3 class="stats-number"></h3>
+                    </div>
+    
+                    <div class="stats-item recovered-cases">
+                        <div class="stats-item-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4 class="stats-title">Recovered Cases</h4>
+                        <h3 class="stats-number"></h3>
+                    </div>
+    
+                    <div class="stats-item total-cases">
+                        <div class="stats-item-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4 class="stats-title">Total Cases</h4>
+                        <h3 class="stats-number"></h3>
+                    </div>
+    
+                    <div class="stats-item total-deaths">
+                        <div class="stats-item-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4 class="stats-title">Total Deaths</h4>             
+                        <h3 class="stats-number"></h3>
+                    </div>
+    
+                    <div class="stats-item total-tests">
+                        <div class="stats-item-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4 class="stats-title">Total Tests Done</h4>
+                        <h3 class="stats-number"></h3>
+                    </div>
                 </div>
             </div>
         </div>

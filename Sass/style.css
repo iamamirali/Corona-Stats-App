@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  font-family: tahoma;
+}
+
 #main {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ec4ba4), color-stop(50%, white));
   background: linear-gradient(#ec4ba4 50%, white 50%);
@@ -25,6 +29,24 @@
   max-width: 1024px;
 }
 
+.container-title {
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.stats-container {
+  background-color: #f3f3f3;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.459);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.459);
+  padding: 30px 20px;
+}
+
 .search-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,24 +55,88 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0px auto 20px auto;
-  width: 30%;
+  width: 35%;
   background-color: #f3f3f3;
-  padding: 20px 40px;
-  border-radius: 10px;
+  padding: 15px 40px;
+  border-radius: 6px;
 }
 
 #search-bar {
   border-style: none;
-  border-radius: 10px;
-  width: 70%;
+  border-radius: 6px;
+  width: 75%;
   padding: 10px;
+  font-size: 1.3rem;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
 }
 
-.stats-container {
-  background-color: #f3f3f3;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.459);
-          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.459);
-  padding: 30px 20px;
+#search-bar:hover {
+  background-color: #d6d6d6;
+}
+
+#search-btn {
+  border-style: none;
+  padding: 12px;
+  border-radius: 50%;
+  color: #2c2c2c;
+  font-size: 2rem;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+#search-btn:hover {
+  background-color: #d6d6d6;
+}
+
+.stats-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+}
+
+.stats-item {
+  padding: 18px 16px 24px 16px;
+  border-radius: 6px;
+  color: #f3f3f3;
+}
+
+.stats-title {
+  font-size: 0.95rem;
+}
+
+.stats-item-icon {
+  font-size: 2rem;
+}
+
+.stats-number {
+  padding-top: 10px;
+  font-size: 2rem;
+}
+
+.active-cases {
+  background-color: #3a96ff;
+}
+
+.critical-cases {
+  background-color: #fc5d2c;
+}
+
+.recovered-cases {
+  background-color: #01af01;
+}
+
+.total-cases {
+  background-color: #c53e3e;
+}
+
+.total-deaths {
+  background-color: #ff00bf;
+}
+
+.total-tests {
+  background-color: #e69500;
 }
 /*# sourceMappingURL=style.css.map */
