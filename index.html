@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./Sass/style.css">
+    <link rel="stylesheet" href="./Style/style.css">
     <title>Document</title>
 </head>
 <body>
     <main id="main">
+        <div class="loading"></div>
+
         <div id="container">
             <div class="search-container">
-                <input type="text" id="search-bar" placeholder="search the country">
-                <button id="search-btn">
-                    <i class="fas fa-search"></i>
-                </button>
+                <div class="search-bar-container">
+                    <input type="text" id="search-bar" placeholder="search the country">
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <p class="search-error"></p>
             </div>
 
             <div class="stats-container">
@@ -76,6 +81,6 @@
         </div>
     </main>
 
-    <script src="./app.js"></script>
+    <script src="./Script/app.js"></script>
 </body>
 </html>

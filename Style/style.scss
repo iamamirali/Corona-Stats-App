@@ -12,8 +12,31 @@ body{
 
 #main { 
     background: linear-gradient($basePinkBg 50%,$baseWhiteBg 50%);
-    height: 100vh;
 }
+
+.loading {
+    font-size: 5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0; 
+    right: 0; 
+    margin: 100px auto  0px auto;
+    border: 80px solid $basePinkBg;
+    border: {
+        top: 80px solid $baseWhiteBg; 
+        bottom: 80px solid $baseWhiteBg; 
+        radius: 50%;
+    }
+    width: 250px;
+    height: 250px;
+    animation: spin 0.4s linear infinite;
+}
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 #container{
     display: flex;
@@ -45,14 +68,17 @@ body{
 }
 
 .search-container{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px auto 20px auto;
-    width: 35%;
+    margin: 0px auto 10px auto;
+    width: 40%;
     background-color: $milkyBg;
     padding: 15px 40px;
     border-radius: $itemRadius;
     box-shadow: $baseBoxShadow;
+}
+
+.search-bar-container{
+    display: flex;
+    justify-content: space-between;
 }
 
 #search-bar{
@@ -62,6 +88,7 @@ body{
     }
     width: 75%;
     padding: 10px;
+    margin: 10px 0px;
     font-size: 1.3rem;
     transition: background 0.2s;
 }
@@ -80,6 +107,11 @@ body{
 }
 #search-btn:hover{
     background-color: $baseHover;
+}
+
+.search-error{
+    color: rgb(211, 14, 0);
+    text-align: center;
 }
 
 
