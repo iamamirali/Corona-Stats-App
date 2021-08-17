@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^27.0.6"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "jest"
   },

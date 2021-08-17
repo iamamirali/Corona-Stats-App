@@ -15,7 +15,6 @@ body{
 }
 
 .loading {
-    font-size: 5rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -40,11 +39,10 @@ body{
 
 #container{
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     margin: auto;
-    // align-items: center;
     justify-content: center;
+    min-height: 100vh;
     max-width: 1024px;
 }
 
@@ -112,6 +110,7 @@ body{
 .search-error{
     color: rgb(211, 14, 0);
     text-align: center;
+    font-weight: bold;
 }
 
 
@@ -157,4 +156,75 @@ body{
 }
 .total-tests{
     background-color: $orangeBg;
+}
+
+@media screen and (max-width: 468px) {
+    .loading {
+        margin: 150px auto  0px auto;
+        border: 50px solid $basePinkBg;
+        border: {
+            top: 50px solid $baseWhiteBg; 
+            bottom: 50px solid $baseWhiteBg; 
+            radius: 50%;
+        }
+        width: 160px;
+        height: 160px;
+    }
+
+    #container {
+        min-height: 100vh;
+        max-width: 468px;
+        justify-content: flex-start;
+        padding: 30px 0px;
+    }
+
+    .container-title{
+        font: {
+            size: 1.2rem;
+        }
+    }
+    
+    .stats-container{
+        width: 85%;
+        border-radius: 20px;
+        padding: 30px 15px;
+    }
+
+    .search-container{
+        width: 85%;
+        padding: 10px 10px;
+    }
+
+    #search-bar{
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    
+    #search-btn{
+        margin: 0px 0px 0px 8px;
+        padding: 0px 15px;
+        font-size: 1.8rem;
+    }
+
+    .search-error{
+        font-size: 0.75rem;
+    }
+    
+    
+    .stats-list{
+        grid-template-columns: 1fr;
+        grid-gap: 18px 12px;
+    }
+    
+    .stats-title{
+        font-size: 0.95rem;
+    }
+    
+    .stats-item-icon{
+        font-size: 1.8rem;
+    }
+    
+    .stats-number{
+        font-size: 1.8rem;
+    }
 }
