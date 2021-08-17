@@ -204,6 +204,10 @@ body{
         margin: 0px 0px 0px 8px;
         padding: 0px 15px;
         font-size: 1.8rem;
+        border-radius: 0%;
+    }
+    #search-btn:hover {
+        background: none;
     }
 
     .search-error{
