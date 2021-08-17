@@ -213,7 +213,11 @@ body{
     
     .stats-list{
         grid-template-columns: 1fr;
-        grid-gap: 18px 12px;
+        grid-gap: 5px 12px;
+    }
+
+    .stats-item{
+        margin-top: 8px;
     }
     
     .stats-title{
